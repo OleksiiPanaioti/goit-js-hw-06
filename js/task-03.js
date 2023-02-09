@@ -12,6 +12,21 @@ const images = [
     alt: 'Group of Horses Running',
   },
 ];
+const containerImages = document.querySelector('.gallery');
 
-bla blabbbabba
-nbabbabab
+const imagesEl = images.map((el) => `<li class="image_item"><img src="${el.url}" alt="${el.alt}"></li>`);
+
+containerImages.insertAdjacentHTML("beforeend", imagesEl);
+
+
+
+
+// const list = document.querySelector(".list");
+
+// const newTechnologies = ["React", "TypeScript", "Node.js"];
+// const markup = newTechnologies
+//   .map((technology) => `<li class="list-item new">${technology}</li>`)
+//   .join("");
+
+// list.insertAdjacentHTML("beforeend", markup);
+// list.insertAdjacentHTML("beforebegin", "<h2>Popular technologies</h2>");
